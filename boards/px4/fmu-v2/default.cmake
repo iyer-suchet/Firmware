@@ -10,15 +10,13 @@ px4_add_board(
 	BOOTLOADER ${PX4_SOURCE_DIR}/ROMFS/px4fmu_common/extras/px4fmuv3_bl.bin
 	IO px4_io-v2_default
 	#TESTING
-	CONSTRAINED_FLASH
 	#UAVCAN_INTERFACES 2
-
+	CONSTRAINED_FLASH
 	SERIAL_PORTS
 		GPS1:/dev/ttyS3
 		TEL1:/dev/ttyS1
 		TEL2:/dev/ttyS2
 		TEL4:/dev/ttyS6
-
 	DRIVERS
 		adc
 		#barometer # all available barometer drivers
@@ -60,9 +58,10 @@ px4_add_board(
 		#test_ppm
 		tone_alarm
 		#uavcan
-
 	MODULES
+		#airspeed_selector
 		#attitude_estimator_q
+		battery_status
 		camera_feedback
 		commander
 		dataman
@@ -70,7 +69,6 @@ px4_add_board(
 		#events
 		fw_att_control
 		fw_pos_control_l1
-		#rover_pos_control
 		land_detector
 		#landing_target_estimator
 		load_mon
@@ -78,15 +76,13 @@ px4_add_board(
 		logger
 		mavlink
 		mc_att_control
-		mc_rate_control
 		mc_pos_control
+		mc_rate_control
 		navigator
-		battery_status
+		#rover_pos_control
 		sensors
 		vmount
 		vtol_att_control
-		#airspeed_selector
-
 	SYSTEMCMDS
 		bl_update
 		#config
@@ -112,7 +108,6 @@ px4_add_board(
 		#usb_connected
 		ver
 		#work_queue
-
 	EXAMPLES
 		#bottle_drop # OBC challenge
 		#fixedwing_control # Tutorial code from https://px4.io/dev/example_fixedwing_control
