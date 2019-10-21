@@ -75,6 +75,7 @@ px4_add_board(
 		mc_rate_control
 		navigator
 		battery_status
+		rc_update
 		sensors
 		sih
 		vmount

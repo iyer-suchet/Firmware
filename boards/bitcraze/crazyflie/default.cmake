@@ -35,6 +35,7 @@ px4_add_board(
 		mc_rate_control
 		mc_pos_control
 		navigator
+		rc_update
 		sensors
 		sih
 		#vtol_att_control
