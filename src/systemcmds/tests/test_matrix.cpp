@@ -828,7 +828,7 @@ bool MatrixTest::pseudoInverseTests()
 		{ 0.f,  0.f,  0.f,  0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f},
 		{-0.25f, -0.25f, -0.25f, -0.25f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f}
 	};
-	Matrix<float, 6, 16> B = Matrix<float, 6, 16>(B_quad_w);
+	Matrix<float, 6, 16> B(B_quad_w);
 	const float A_quad_w[16][6] = {
 		{ -0.495383f,  0.707107f,  0.765306f,  0.0f, 0.0f, -1.000000f },
 		{  0.495383f, -0.707107f,  1.000000f,  0.0f, 0.0f, -1.000000f },
@@ -847,7 +847,7 @@ bool MatrixTest::pseudoInverseTests()
 		{ 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f},
 		{ 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f}
 	};
-	Matrix<float, 16, 6> A_check = Matrix<float, 16, 6>(A_quad_w);
+	Matrix<float, 16, 6> A_check(A_quad_w);
 	Matrix<float, 16, 6> A = geninv(B);
 	ut_test((A - A_check).abs().max() < 1e-5);
 
