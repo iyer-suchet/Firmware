@@ -1,7 +1,7 @@
 # Custom Leap VTOL craft configuration - MKII
 
 [info]
-key = "8cw"
+key = "8lv"
 description = "Custom Leap VTOl craft MKII"
 
 [rotor_default]
