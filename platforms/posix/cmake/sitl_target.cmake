@@ -51,7 +51,7 @@ set(debuggers none ide gdb lldb ddd valgrind callgrind)
 set(models none shell
 	if750a iris iris_opt_flow iris_vision iris_rplidar iris_irlock iris_obs_avoid iris_rtps solo typhoon_h480
 	plane
-	standard_vtol tailsitter tiltrotor
+	standard_vtol tailsitter tiltrotor leap_vtol_mk2 leap_vtol_mk3
 	hippocampus rover)
 set(all_posix_vmd_make_targets)
 foreach(viewer ${viewers})
