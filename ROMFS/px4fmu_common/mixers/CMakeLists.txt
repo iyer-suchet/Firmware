@@ -56,6 +56,8 @@ px4_add_romfs_files(
 	hexa_+.main.mix
 	hexa_x.main.mix
 	IO_pass.main.mix
+	leap_vtol.main.mix
+	leap_vtol_hitl.main.mix
 	mount.aux.mix
 	mount_legs.aux.mix
 	ocpoc_quad_x.main.mix
