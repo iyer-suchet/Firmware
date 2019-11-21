@@ -38,6 +38,10 @@ px4_add_romfs_files(
 	rc.fw_defaults
 	rc.interface
 	rc.io
+	rc.leap_apps
+	rc.leap_defaults
+	rc.leapmc_apps
+	rc.leapmc_defaults
 	rc.logging
 	rc.mc_apps
 	rc.mc_defaults

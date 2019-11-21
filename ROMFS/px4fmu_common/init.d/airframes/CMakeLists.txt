@@ -38,6 +38,7 @@ px4_add_romfs_files(
 	1000_rc_fw_easystar.hil
 	1001_rc_quad_x.hil
 	1002_standard_vtol.hil
+	1003_leap_vtol.hil
 	1100_rc_quad_x_sih.hil
 	
 	# [2000, 2999] Standard planes"
@@ -118,6 +119,7 @@ px4_add_romfs_files(
 	# [12000, 12999] Octo Cox
 	12001_octo_cox
 	12002_steadidrone_mavrik
+	12222_leap_mc
 
 	# [13000, 13999] VTOL
 	13000_generic_vtol_standard
@@ -134,6 +136,7 @@ px4_add_romfs_files(
 	13012_convergence
 	13013_deltaquad
 	13200_generic_vtol_tailsitter
+	13222_leap_vtol
 
 	# [14000, 14999] Tri Y
 	14001_tri_y_yaw+
