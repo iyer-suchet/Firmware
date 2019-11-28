@@ -11,56 +11,56 @@ Cm        = 0.05
 
 #Motor 1
 [[rotors]]
-name      = "right_top_in"
+name      = "front_right_top"
 position  = [0.265, 0.340, -0.195]
 #direction = "CCW"
 direction = "CW"
 
 #Motor 2
 [[rotors]]
-name     = "left_top_in"
+name     = "front_left_top"
 position = [0.265, -0.340, -0.195]
 #direction = "CW"
 direction = "CCW"
 
 #Motor 3
 [[rotors]]
-name      = "left_bottom_in"
+name      = "rear_left_top"
 position  = [-0.265, -0.340, -0.195]
 #direction = "CCW"
 direction = "CW"
 
 #Motor 4
 [[rotors]]
-name     = "right_bottom_in"
+name     = "rear_right_top"
 position = [-0.265, 0.340, -0.195]
 #direction = "CW"
 direction = "CCW"
 
 #Motor 5
 [[rotors]]
-name     = "left_top_out"
+name     = "front_left_bottom"
 position = [0.265, -0.660, -0.195]
 #direction = "CCW"
 direction = "CW"
 
 #Motor 6
 [[rotors]]
-name      = "right_top_out"
+name      = "front_right_bottom"
 position  = [0.265, 0.660, -0.195]
 #direction = "CW"
 direction = "CCW"
 
 #Motor 7
 [[rotors]]
-name     = "right_bottom_out"
+name     = "rear_right_bottom"
 position = [-0.265, 0.660, -0.195]
 #direction = "CCW"
 direction = "CW"
 
 #Motor 8
 [[rotors]]
-name      = "left_bottom_in"
+name      = "rear_left_bottom"
 position  = [-0.265, -0.660, -0.195]
 #direction = "CW"
 direction = "CCW"
